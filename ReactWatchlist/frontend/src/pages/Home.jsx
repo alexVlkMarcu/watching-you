@@ -79,6 +79,7 @@ function Home() {
 
 
     return <div className="home">
+        <p>Testing placeholder. Here, maybe explain the point of the website and how to navigate.</p>
         {/* text input controlled by React state (searchQuery).
           every keystroke updates the state via setSearchQuery */}
         <form onSubmit={handleSearch} className="search-form">
@@ -97,6 +98,7 @@ function Home() {
         {loading ? (
             <div className="loading">Loading...</div>
         ) : (
+            // Here, maybe sort the movies into genres or something idk. "browse movies"
             <div className="movies-grid">
                 {movies.map((movie) => (
                     // movie.title.toLowerCase().startsWith(searchQuery) && // simple way to do it
